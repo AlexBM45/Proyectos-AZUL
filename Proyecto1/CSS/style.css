@@ -1,0 +1,269 @@
+/* ESTILOS GENERALES
+	afecta a todos los elementos */
+*{
+	margin: 0px;
+	padding: 0px;
+	color: #ffff;
+	/* fuente importada desde Google, llamada en la cabecera */
+	font-family: 'Merriweather Sans', sans-serif;
+	font-weight: 100;
+}
+
+/* FONDO */
+html, body, .cover {
+	height: 100%;
+}
+
+
+/* GENERAL */
+nav {
+	margin: 0px 3.5rem;
+	padding-top: 26px;
+}
+section {
+	background: black;
+	border: solid 2px rgb(70, 69, 69);
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+h1 {
+	font-size: 4rem;
+	font-weight: 700;
+}
+h2 {
+	font-size: 1.625rem;
+}
+h3 {
+	font-size: 1rem;
+}
+.restaurar {
+	clear: both;
+}
+
+
+.cover {
+	background: url(../IMG/fondo.jpg);
+	text-align: center;
+}
+
+
+/*CABECERA*/
+section.cabecera {
+	background: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	/* Gradiente para que el fondo se vea más oscuro */
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+}
+div.logo {
+	float: left;
+}
+div.login{
+	float: right;
+}
+div.login:hover {
+	cursor: pointer;
+	background: red;
+}
+div.login span {
+	padding: 7px 17px;
+	background: #e50914;
+	border-radius: 4px;
+}
+
+
+/*PRESENTACIÓN*/
+.presentacion {
+	text-align: center;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 200px;
+	left: 250px;
+}
+.presentacion span{
+	background: #e50914;
+	padding: 21px;
+	padding-bottom: 25px;
+	font-weight: 500;
+	margin-left: -5px;
+	border: solid #d30f18;
+}
+.presentacion span:hover, .contenidoPreguntas span:hover {
+	cursor: pointer;
+	background: red;
+}
+/* input */
+.presentacion input {
+	height: 70px;
+	width: 500px;
+	margin-top: 8px;
+	margin-bottom: 3px;
+	border-radius: 2px 0px 0px 2px;
+	border: 1px solid #5695e9;
+	padding-left: 11px;
+	color: #1c1c1c;
+}
+
+
+.izquierda {
+	float: left;
+}
+.derecha {
+	float: right;
+}
+.flotanteTexto {
+	width: 59%;
+}
+.flotanteImagen {
+	width: 39%;
+}
+.contenido h2 {
+	font-weight: bold;
+	font-size: 50px;
+}
+.contenido p {
+	font-size: 25px;
+	font-weight: 200px;
+}
+.contenido img {
+	width: 100%;
+	height: auto;
+	border: 0;
+	position: relative;
+	z-index: 2;
+}
+.contenido img{
+	width: 100%;
+	height: auto;
+	border: 0;
+	position: relative;
+	z-index: 2;
+}
+
+/* TV */
+section div.contenido {
+	width: 1100px;
+	margin: auto;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tv video {
+	position: absolute;
+	transform: translate(-373px, 68px);
+	width: 313px;
+	z-index: 1;
+}
+
+/* DISFRUTA */
+.disfruta video {
+	position: absolute;
+	transform: translate(-347px, 39px);
+	width: 263px;
+	z-index: 1;
+}
+
+.tarjetaInt {
+	width: 70%;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: #575757 solid 2px;
+	border-radius: 8px;
+	margin: auto;
+	position: relative;
+	z-index: 2;
+	background: black;
+}
+
+.textoPortada {
+	font-size: 12px;
+}
+
+.portada {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.tarjeta {
+	position: relative;
+	transform: translate(-65px, -41px);
+}
+
+/* PREGUNTAS */
+.preguntas h2 {
+	font-weight: bold;
+	font-size: 35px;
+}
+.contenidoPreguntas {
+	width: 650px;
+	margin: auto;
+	text-align: center;
+}
+.contenidoPreguntas div {
+	text-align: left;
+	font-size: 20px;
+}
+.pregunta{
+	background: #303030;
+	padding: 10px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+.pregunta p, .respuesta p {
+	padding: 10px;
+	padding-left: 20px;
+}
+.respuesta hr {
+	border: 1px solid #262626;
+}
+.pregunta:hover .respuesta{
+	max-height: 1000px;
+}
+.respuesta{
+	max-height: 0px;
+	overflow: hidden;
+	transition: all 0.4s;
+}
+.contenidoPreguntas input {
+	height: 60px;
+	width: 465px;
+	margin-bottom: 3px;
+	margin-top: 20px;
+	font-weight: 500;
+	margin-left: -5px;
+	border: solid #5695e9 1px;
+	border-radius: 2px 0px 0px 2px;
+}
+.contenidoPreguntas span{
+	background: #e50914;
+	padding: 16px;
+	padding-bottom: 23px;
+	font-weight: 500;
+	margin-left: -5px;
+	border: solid #d30f18;
+}
+.contenidoPreguntas h3{
+	font-size: 15px;
+}
+
+/* PIE */
+.piecontenido{
+	width: 1100px;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+}
+.pie p{
+	padding: 7px;
+}
+.pie .espacio{
+	width: 100px;
+}
